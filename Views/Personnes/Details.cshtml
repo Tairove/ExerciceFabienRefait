@@ -1,0 +1,58 @@
+﻿@model Groupe.Models.Personne
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Personne</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Pays.Nom_Pays)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pays.Nom_Pays)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prenom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prenom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateDeNaissance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateDeNaissance)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PersonneID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
